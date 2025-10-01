@@ -141,6 +141,8 @@ extra_javascript:
 
 nav:
   - Home: index.md
+  - Exercícios:
+    - 1. Product API: ./productapi/main.md
   - This documentation: ./thisdocumentation/main.md
   - Roteiros:
     - Roteiro 1: ./roteiro1/main.md

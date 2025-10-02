@@ -22,7 +22,11 @@ flowchart LR
         order --> db
     end
     exchange e3@==> 3partyapi:::green@{label: "3rd-party API"}
-    internet ==> |request| gateway:::orange
+    internet e2@==> |request| gateway:::orange
+    e1@{ animate: true }
+    e2@{ animate: true }
+    e3@{ animate: true }
+    classDef green fill:#cfc
     classDef orange fill:#FCBE3E
 ```
 

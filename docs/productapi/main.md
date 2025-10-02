@@ -122,25 +122,25 @@ api/
     === "pom.xml"
 
         ``` { .yaml .copy .select linenums="1" }
-        --8<-- "https://github.com/Joao-Pedro-Queiroz/product/pom.xml"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/product/refs/heads/main/pom.xml"
         ```
 
     === "ProductController"
 
         ``` { .java title='ProductController.java' .copy .select linenums='1' }
-        --8<-- "https://github.com/Joao-Pedro-Queiroz/product/src/main/java/store/product/ProductController.java"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/product/refs/heads/main/src/main/java/store/product/ProductController.java"
         ```
 
     === "ProductIn"
 
         ``` { .java title='ProductIn.java' .copy .select linenums='1' }
-        --8<-- "https://github.com/Joao-Pedro-Queiroz/product/src/main/java/store/procut/ProductIn.java"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/product/refs/heads/main/src/main/java/store/procut/ProductIn.java"
         ```
 
     === "ProductOut"
 
         ``` { .java title='ProductOut.java' .copy .select linenums='1' }
-        --8<-- "https://github.com/Joao-Pedro-Queiroz/product/src/main/java/store/procut/ProductOut.java"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/product/refs/heads/main/src/main/java/store/procut/ProductOut.java"
         ```
 
 
@@ -182,74 +182,75 @@ api/
     === "pom.xml"
 
         ``` { .yaml .copy .select linenums="1" }
-        --8<-- "https://github.com/Joao-Pedro-Queiroz/product-service/pom.xml"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/product-service/refs/heads/main/pom.xml"
         ```
 
     === "Dockerfile"
 
         ``` { .dockerfile .copy .select linenums="1" }
-        --8<-- "https://github.com/Joao-Pedro-Queiroz/product-service/Dockerfile"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/product-service/refs/heads/main/Dockerfile"
         ```
 
     === "application.yaml"
 
         ``` { .yaml .copy .select linenums="1" }
-        --8<-- "hhttps://github.com/Joao-Pedro-Queiroz/product-service/src/main/resources/application.yaml"
+        --8<-- "hhttps://raw.githubusercontent.com/Joao-Pedro-Queiroz/product-service/refs/heads/main/src/main/resources/application.yaml"
         ```
 
     === "Product.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://github.com/Joao-Pedro-Queiroz/productt-service/src/main/java/store/product/Product.java"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/productt-service/refs/heads/main/src/main/java/store/product/Product.java"
         ```
 
     === "ProductApplication.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://github.com/Joao-Pedro-Queiroz/productt-service/src/main/java/store/product/ProductApplication.java"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/productt-service/refs/heads/main/src/main/java/store/product/ProductApplication.java"
         ```
 
     === "ProductModel.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://github.com/Joao-Pedro-Queiroz/productt-service/src/main/java/store/product/ProductModel.java"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/productt-service/refs/heads/main/src/main/java/store/product/ProductModel.java"
         ```
 
     === "ProductParser.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://github.com/Joao-Pedro-Queiroz/productt-service/src/main/java/store/product/ProductParser.java"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/productt-service/refs/heads/main/src/main/java/store/product/ProductParser.java"
         ```
 
     === "ProductRepository.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://github.com/Joao-Pedro-Queiroz/productt-service/src/main/java/store/product/ProductRepository.java"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/productt-service/refs/heads/main/src/main/java/store/product/ProductRepository.java"
         ```
 
     === "ProductResource.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "hhttps://github.com/Joao-Pedro-Queiroz/productt-service/src/main/java/store/product/ProductResource.java"
+        --8<-- "hhttps://raw.githubusercontent.com/Joao-Pedro-Queiroz/productt-service/refs/heads/main/src/main/java/store/product/ProductResource.java"
         ```
 
     === "ProductService.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://github.com/Joao-Pedro-Queiroz/productt-service/src/main/java/store/product/ProductService.java"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/productt-service/refs/heads/main/src/main/java/store/product/ProductService.java"
         ```
 
     === "V2025.08.29.001__create_schema.sql"
 
         ``` { .sql .copy .select linenums="1" }
-        --8<-- "https://github.com/Joao-Pedro-Queiroz/productt-service/src/main/resources/db/migration/V2025.08.29.001__create_schema.sql"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/productt-service/refs/heads/main/src/main/resources/db/migration/V2025.08.29.001__create_schema.sql"
         ```
 
     === "V2025.08.29.002__create_table_product.sql"
 
         ``` { .sql .copy .select linenums="1" }
-        --8<-- "https://github.com/Joao-Pedro-Queiroz/productt-service/src/main/resources/db/migration/V2025.08.29.002__create_table_product.sql"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/productt-service/refs/heads/main/src/main/resources/db/migration/V2025.08.29.002__create_table_product.sql"
         ```
+
 
 
 <!-- termynal -->

@@ -8,7 +8,7 @@ A **Product API** implementa o CRUD de produtos do domínio `store`, seguindo o 
 
 ---
 
-## 1) Visão geral
+## Visão geral
 
 - **Interface (`product`)**: define o contrato (DTOs e Feign) consumido por outros módulos/fronts.
 - **Service (`product-service`)**: implementação REST, regras de negócio, persistência (JPA), e migrações (Flyway).

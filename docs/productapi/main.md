@@ -230,7 +230,7 @@ api/
     === "ProductResource.java"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "hhttps://raw.githubusercontent.com/Joao-Pedro-Queiroz/product-service/refs/heads/main/src/main/java/store/product/ProductResource.java"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/product-service/refs/heads/main/src/main/java/store/product/ProductResource.java"
         ```
 
     === "ProductService.java"

@@ -255,6 +255,10 @@ api/
         --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/java/store/order/OrderRepository.java"
         ```
 
+    === "V2025.08.29.001__create_schema.sql"
+        ``` { .sql .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/resources/db/migration/V2025.08.29.001__create_schema.sql"
+
     === "V2025.08.29.002__create_table_order.sql"
         ``` { .sql .copy .select linenums="1" }
         --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/resources/db/migration/V2025.08.29.002__create_table_order.sql"

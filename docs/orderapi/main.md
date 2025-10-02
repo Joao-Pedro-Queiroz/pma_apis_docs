@@ -14,7 +14,7 @@ Ela segue o padrão adotado no projeto: **interface** (`order`) e **service** (`
 - **Service (`order-service`)**: implementação REST, regras de negócio, persistência (JPA), e migrações (Flyway).  
 
 ``` mermaid
-cclassDiagram
+classDiagram
     namespace order {
         class OrderController {
             +create(OrderIn orderIn): OrderOut
@@ -45,7 +45,6 @@ cclassDiagram
             -Double total
         }
     }
-
     namespace order-service {
         class OrderResource {
             +create(OrderIn orderIn): OrderOut
@@ -83,7 +82,6 @@ cclassDiagram
             +toOut(Order order): OrderOut
         }
     }
-
     <<Interface>> OrderController
     OrderController ..> OrderIn
     OrderController ..> OrderOut
@@ -146,34 +144,34 @@ api/
 ??? info "Source"
 
     === "pom.xml"
-    ``` { .yaml .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order/refs/heads/main/pom.xml"
-    ```
+        ``` { .yaml .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order/refs/heads/main/pom.xml"
+        ```
 
     === "OrderController.java"
-    ``` { .java .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order/refs/heads/main/src/main/java/store/order/OrderController.java"
-    ```
+        ``` { .java .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order/refs/heads/main/src/main/java/store/order/OrderController.java"
+        ```
 
     === "OrderIn.java"
-    ``` { .java .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order/refs/heads/main/src/main/java/store/order/OrderIn.java"
-    ```
+        ``` { .java .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order/refs/heads/main/src/main/java/store/order/OrderIn.java"
+        ```
 
     === "OrderOut.java"
-    ``` { .java .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order/refs/heads/main/src/main/java/store/order/OrderOut.java"
-    ```
+        ``` { .java .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order/refs/heads/main/src/main/java/store/order/OrderOut.java"
+        ```
 
     === "OrderItemIn.java"
-    ``` { .java .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order/refs/heads/main/src/main/java/store/order/OrderItemIn.java"
-    ```
+        ``` { .java .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order/refs/heads/main/src/main/java/store/order/OrderItemIn.java"
+        ```
 
     === "OrderItemOut.java"
-    ``` { .java .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order/refs/heads/main/src/main/java/store/order/OrderItemOut.java"
-    ```
+        ``` { .java .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order/refs/heads/main/src/main/java/store/order/OrderItemOut.java"
+        ```
 
 <!-- termynal -->
 
@@ -213,59 +211,59 @@ api/
 ??? info "Source"
 
     === "pom.xml"
-    ``` { .yaml .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/pom.xml"
-    ```
+        ``` { .yaml .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/pom.xml"
+        ```
 
     === "Dockerfile"
-    ``` { .dockerfile .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/Dockerfile"
-    ```
+        ``` { .dockerfile .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/Dockerfile"
+        ```
 
     === "application.yaml"
-    ``` { .yaml .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/resources/application.yaml"
-    ```
+        ``` { .yaml .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/resources/application.yaml"
+        ```
 
     === "Order.java"
-    ``` { .java .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/java/store/order/Order.java"
-    ```
+        ``` { .java .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/java/store/order/Order.java"
+        ```
 
     === "OrderItem.java"
-    ``` { .java .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/java/store/order/OrderItem.java"
-    ```
+        ``` { .java .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/java/store/order/OrderItem.java"
+        ```
 
     === "OrderApplication.java"
-    ``` { .java .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/java/store/order/OrderApplication.java"
-    ```
+        ``` { .java .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/java/store/order/OrderApplication.java"
+        ```
 
     === "OrderService.java"
-    ``` { .java .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/java/store/order/OrderService.java"
-    ```
+        ``` { .java .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/java/store/order/OrderService.java"
+        ```
 
     === "OrderResource.java"
-    ``` { .java .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/java/store/order/OrderResource.java"
-    ```
+        ``` { .java .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/java/store/order/OrderResource.java"
+        ```
 
     === "OrderRepository.java"
-    ``` { .java .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/java/store/order/OrderRepository.java"
-    ```
+        ``` { .java .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/java/store/order/OrderRepository.java"
+        ```
 
     === "V2025.08.29.002__create_table_order.sql"
-    ``` { .sql .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/resources/db/migration/V2025.08.29.002__create_table_order.sql"
-    ```
+        ``` { .sql .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/resources/db/migration/V2025.08.29.002__create_table_order.sql"
+        ```
 
     === "V2025.08.29.003__create_table_order_item.sql"
-    ``` { .sql .copy .select linenums="1" }
-    --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/resources/db/migration/V2025.08.29.003__create_table_order_item.sql"
-    ```
+        ``` { .sql .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/resources/db/migration/V2025.08.29.003__create_table_order_item.sql"
+        ```
 
 <!-- termynal -->
 

@@ -253,6 +253,10 @@ api/
     === "OrderRepository.java"
         ``` { .java .copy .select linenums="1" }
         --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/java/store/order/OrderRepository.java"
+
+    === "FeignAuthInterceptor.java"
+        ``` { .java .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/src/main/java/store/order/FeignAuthInterceptor.java"
         ```
 
     === "V2025.08.29.001__create_schema.sql"

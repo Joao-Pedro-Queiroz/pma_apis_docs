@@ -197,6 +197,7 @@ api/
                             OrderRepository.java
                             OrderResource.java
                             OrderService.java
+                            FeignAuthInterceptor.java
                 resources/
                     application.yaml
                     db/

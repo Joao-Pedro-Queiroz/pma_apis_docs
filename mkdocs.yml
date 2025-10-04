@@ -144,3 +144,4 @@ nav:
   - Exercícios:
     - 1. Product API: ./productapi/main.md
     - 2. Order API: ./orderapi/main.md
+    - 3. Exchange API: ./exchangeapi/main.md

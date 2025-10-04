@@ -41,3 +41,4 @@ Principal:
 | Gateway |  | [gateway-service](https://github.com/Joao-Pedro-Queiroz/gateway-service) |
 | Product | [product](https://github.com/Joao-Pedro-Queiroz/product) | [product-service](https://github.com/Joao-Pedro-Queiroz/product-service) |
 | Order | [order](https://github.com/Joao-Pedro-Queiroz/order) | [order-service](https://github.com/Joao-Pedro-Queiroz/order-service) |
+| Exchange | [exchange-service](https://github.com/Joao-Pedro-Queiroz/exchange-service) |

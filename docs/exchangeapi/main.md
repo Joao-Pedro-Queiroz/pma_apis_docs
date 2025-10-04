@@ -84,7 +84,7 @@ api/
     === "Dockerfile"
 
         ``` { .dockerfile .copy .select linenums="1" }
-        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/exchange-service/refs/heads/main/Dockerfile"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/exchange-service/refs/heads/main/DockerFile"
         ```
 
     === "main.py"

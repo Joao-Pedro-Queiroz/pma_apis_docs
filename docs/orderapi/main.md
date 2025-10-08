@@ -225,7 +225,7 @@ api/
 
     === "Dockerfile"
         ``` { .dockerfile .copy .select linenums="1" }
-        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/Dockerfile"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/DockerFile"
         ```
 
     === "Jenkinsfile"

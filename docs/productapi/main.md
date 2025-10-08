@@ -115,6 +115,7 @@ api/
                             ProductIn.java
                             ProductOut.java
         pom.xml
+        Jenkinsfile
 ```
 
 ??? info "Source"
@@ -123,6 +124,12 @@ api/
 
         ``` { .yaml .copy .select linenums="1" }
         --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/product/refs/heads/main/pom.xml"
+        ```
+
+    === "Jenkinsfile"
+
+        ``` { .jenkinsfile .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/product/refs/heads/main/Jenkinsfile"
         ```
 
     === "ProductController"
@@ -174,6 +181,7 @@ api/
                             V2025.08.29.002__create_table_product.sql
         pom.xml
         Dockerfile
+        Jenkinsfile
 ```
 
 ??? info "Source"
@@ -188,6 +196,12 @@ api/
 
         ``` { .dockerfile .copy .select linenums="1" }
         --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/product-service/refs/heads/main/DockerFile"
+        ```
+
+    === "Jenkinsfile"
+
+        ``` { .jenkinsfile .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/product-service/refs/heads/main/Jenkinsfile"
         ```
 
     === "application.yaml"

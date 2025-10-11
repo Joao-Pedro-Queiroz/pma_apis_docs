@@ -3,8 +3,9 @@
 A **Order API** gerencia os pedidos do domínio `store`, permitindo criar e consultar ordens associadas ao usuário autenticado.  
 Ela segue o padrão adotado no projeto: **interface** (`order`) e **service** (`order-service`) atrás do **gateway** e protegidos por **JWT**.
 
-!!! attention
-    Para consumir a API é necessário estar autenticado.
+!!! info "Trusted layer e segurança"
+    Toda requisição externa entra pelo **gateway**.  
+    As rotas `/order/**` são **protegidas**: é obrigatório enviar `Authorization: Bearer <jwt>`.
 
 ---
 

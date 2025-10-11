@@ -3,16 +3,15 @@
 A **Exchange API** fornece serviços de conversão de moedas para o domínio `store`.  
 Ela permite consultar a taxa de câmbio entre duas moedas (`from_curr` → `to_curr`), aplicando automaticamente o spread configurado e vinculando a operação ao usuário autenticado.
 
-!!! attention
-    Para consumir a API é necessário estar autenticado (JWT).
+!!! info "Trusted layer e segurança"
+    Toda requisição externa entra pelo **gateway**.  
+    As rotas `/exchange/**` são **protegidas**: é obrigatório enviar `Authorization: Bearer <jwt>`.
 
 ---
 
 ## Visão geral
 
-- **exchange-service**: microserviço implementado em **FastAPI (Python)**, responsável por consultar um provedor externo de câmbio e aplicar regras de spread.  
-- Ele é acessado **via gateway-service**, que faz a validação JWT e injeta o `id-account` nos headers.  
-- Diferente de outros domínios (como `order` ou `product`), não existe um repositório JPA nem uma interface REST separada em Java todo o serviço roda em Python com FastAPI.
+- **Service (`exchange-service`)**: Microserviço em **FastAPI (Python)** que consulta um **provedor externo** de câmbio (HTTP), aplica um **spread** configurável e retorna as cotações.
 
 ``` mermaid
 classDiagram

@@ -146,7 +146,7 @@ api
         --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/gateway-service/refs/heads/main/src/main/java/store/gateway/security/AuthorizationFilter.java"
         ```
 
-    === "CorsFilter.java"
+    === "RouterValidator.java"
 
         ``` { .java .copy .select linenums='1' }
         --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/gateway-service/refs/heads/main/src/main/java/store/gateway/security/RouterValidator.java"

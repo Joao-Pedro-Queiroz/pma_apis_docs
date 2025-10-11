@@ -185,7 +185,7 @@ api
     === "Dockerfile"
 
         ``` { .java .copy .select linenums='1' }
-        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/auth-service/refs/heads/main/Dockerfile"
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/auth-service/refs/heads/main/DockerFile"
         ```
 
     === "Jenkinsfile"

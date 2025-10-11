@@ -142,7 +142,7 @@ extra_javascript:
 nav:
   - Home: index.md
   - API's:
-    - 1. Account API: ./account/main.md
+    - 1. Account API: ./accountapi/main.md
     - 2. Auth API: ./authapi/main.md
     - 3. Gateway API: ./gatewayapi/main.md
     - 4. Product API: ./productapi/main.md

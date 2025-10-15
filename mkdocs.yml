@@ -148,3 +148,4 @@ nav:
     - 4. Product API: ./productapi/main.md
     - 5. Order API: ./orderapi/main.md
     - 6. Exchange API: ./exchangeapi/main.md
+    - 7. Jenkins: ./jenkins/main.md

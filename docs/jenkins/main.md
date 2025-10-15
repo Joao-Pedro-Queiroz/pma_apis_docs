@@ -8,7 +8,7 @@ Existem **dois tipos de pipelines**:
    - **Não** publicam imagem Docker.  
    - Passos: `mvn -B -DskipTests clean install`.
 
-2) **Serviços** (`account-service`, `auth-service`, `product-service`, `order-service`, `gateway-service`, `exchange-service`, …):  
+2) **Serviços** (`account-service`, `auth-service`, `product-service`, `order-service`, `gateway-service`, …):  
    - Build Java ou Python (conforme o serviço).  
    - **Build & push** de imagem Docker (multi-arch) para o Docker Hub.  
    - Podem acionar **jobs de dependência** (ex.: compilar a interface antes).
@@ -110,17 +110,17 @@ flowchart TB
 
 Os `Jenkinsfile` de cada componente estão **nas documentações das respectivas APIs**:
 
-| Componente         | Documentação                                |
-|--------------------|----------------------------------------------|
-| Account (interface)| `docs/accountapi/main.md`                        |
-| Account-Service    | `docs/accountapi/main.md`                        |
-| Auth (interface)   | `docs/authapi/main.md`                           |
-| Auth-Service       | `docs/authapi/main.md`                           |
-| Gateway-Service    | `docs/gatewayapi/main.md`                        |
-| Product (interface)| `docs/productapi/main.md`                        |
-| Product-Service    | `docs/productapi/main.md`                        |
-| Order (interface)  | `docs/orderapi/main.md`                          |
-| Order-Service      | `docs/orderapi/main.md`                          |
+| Componente         | Documentação                                       |
+|--------------------|----------------------------------------------------|
+| Account (interface)| [Account API](../accountapi/main.md)               |
+| Account-Service    | [Account API](../accountapi/main.md)       |
+| Auth (interface)   | [Auth API](../authapi/main.md)                     |
+| Auth-Service       | [Auth API](../authapi/main.md)             |
+| Gateway-Service    | [Gateway API](../gatewayapi/main.md)               |
+| Product (interface)| [Product API](../productapi/main.md)               |
+| Product-Service    | [Product API](../productapi/main.md)       |
+| Order (interface)  | [Order API](../orderapi/main.md)                   |
+| Order-Service      | [Order API](../orderapi/main.md)           |
 
 > Cada página detalha o `Jenkinsfile` correspondente via bloco **Source**.
 

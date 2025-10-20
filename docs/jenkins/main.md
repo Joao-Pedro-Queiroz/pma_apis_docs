@@ -52,7 +52,7 @@ pipeline {
     agent any
     environment {
         SERVICE = <nome_serviço>            // nome lógico do serviço
-        NAME = "jpqv/${env.SERVICE}"   // repositório de imagem no Docker Hub
+        NAME = "<conta_dockerhub>/${env.SERVICE}"   // repositório de imagem no Docker Hub
     }
     stages {
         stage('Dependecies') {
@@ -131,11 +131,6 @@ Os `Jenkinsfile` de cada componente estão **nas documentações das respectivas
 - **Credenciais**: o push de imagens usa o secret `dockerhub-credential` (usuário/senha).  
 - **Multi-arch**: as imagens são publicadas para `linux/amd64` e `linux/arm64` via `buildx`.  
 - **Dependências**: serviços disparam o job da interface para garantir que compilam contra a versão mais recente dos contratos.  
-- **Ambiente local**: o deploy da stack é feito via `docker compose up --build` (fora do Jenkins).
-
-```bash
-> docker compose up --build
-```
 
 ---
 

@@ -78,6 +78,8 @@ flowchart LR
 ``` tree
 api
     gateway-service/
+        k8s/
+            k8s.yaml
         src/
             main/
                 java/
@@ -114,6 +116,12 @@ api
 
         ``` { .jenkinsfile .copy .select linenums="1" }
         --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/gateway-service/refs/heads/main/Jenkinsfile"
+        ```
+
+    === "k8s.yaml"
+
+        ``` { .yaml .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/gateway-service/refs/heads/main/k8s/k8s.yaml"
         ```
 
     === "application.yaml"

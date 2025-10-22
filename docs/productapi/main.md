@@ -161,6 +161,8 @@ api/
 ``` tree
 api/
     product-service/
+        k8s/
+            k8s.yaml
         src/
             main/
                 java/
@@ -202,6 +204,12 @@ api/
 
         ``` { .jenkinsfile .copy .select linenums="1" }
         --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/product-service/refs/heads/main/Jenkinsfile"
+        ```
+
+    === "k8s.yaml"
+
+        ``` { .yaml .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/product-service/refs/heads/main/k8s/k8s.yaml"
         ```
 
     === "application.yaml"

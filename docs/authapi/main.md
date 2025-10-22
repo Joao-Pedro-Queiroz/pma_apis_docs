@@ -94,13 +94,13 @@ flowchart LR
 ## Auth
 
 ``` tree
-api
-    auth
-        src
-            main
-                java
-                    store
-                        auth
+api/
+    auth/
+        src/
+            main/
+                java/
+                    store/
+                        auth/
                             AuthController.java
                             LoginIn.java
                             RegisterIn.java
@@ -156,18 +156,20 @@ api
 ## Auth-Service
 
 ``` tree
-api
-    auth-service
-        src
-            main
-                java
-                    store
-                        auth
+api/
+    auth-service/
+        k8s/
+            k8s.yaml
+        src/
+            main/
+                java/
+                    store/
+                        auth/
                             AuthApplication.java
                             AuthResource.java
                             AuthService.java
                             JwtService.java
-            resources
+            resources/
                 application.yaml
         pom.xml
         Dockerfile
@@ -192,6 +194,12 @@ api
 
         ``` { .jenkinsfile .copy .select linenums="1" }
         --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/auth-service/refs/heads/main/Jenkinsfile"
+        ```
+
+    === "k8s.yaml"
+
+        ``` { .yaml .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/auth-service/refs/heads/main/k8s/k8s.yaml"
         ```
 
     === "application.yaml"

@@ -191,6 +191,8 @@ api/
 ``` tree
 api/
     order-service/
+        k8s/
+            k8s.yaml
         src/
             main/
                 java/
@@ -232,6 +234,11 @@ api/
     === "Jenkinsfile"
         ``` { .jenkinsfile .copy .select linenums="1" }
         --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/Jenkinsfile"
+        ```
+
+    === "k8s.yaml"
+        ``` { .yaml .copy .select linenums="1" }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/order-service/refs/heads/main/k8s/k8s.yaml"
         ```
 
     === "application.yaml"

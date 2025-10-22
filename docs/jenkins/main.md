@@ -113,14 +113,14 @@ Os `Jenkinsfile` de cada componente estão **nas documentações das respectivas
 | Componente         | Documentação                                       |
 |--------------------|----------------------------------------------------|
 | Account (interface)| [Account API](../accountapi/main.md)               |
-| Account-Service    | [Account API](../accountapi/main.md)       |
+| Account-Service    | [Account API](../accountapi/main.md)               |
 | Auth (interface)   | [Auth API](../authapi/main.md)                     |
-| Auth-Service       | [Auth API](../authapi/main.md)             |
+| Auth-Service       | [Auth API](../authapi/main.md)                     |
 | Gateway-Service    | [Gateway API](../gatewayapi/main.md)               |
 | Product (interface)| [Product API](../productapi/main.md)               |
-| Product-Service    | [Product API](../productapi/main.md)       |
+| Product-Service    | [Product API](../productapi/main.md)               |
 | Order (interface)  | [Order API](../orderapi/main.md)                   |
-| Order-Service      | [Order API](../orderapi/main.md)           |
+| Order-Service      | [Order API](../orderapi/main.md)                   |
 
 > Cada página detalha o `Jenkinsfile` correspondente via bloco **Source**.
 

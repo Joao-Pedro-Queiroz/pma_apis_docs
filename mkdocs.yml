@@ -149,3 +149,4 @@ nav:
     - 5. Order API: ./orderapi/main.md
     - 6. Exchange API: ./exchangeapi/main.md
     - 7. Jenkins: ./jenkins/main.md
+    - 8. Kubernets: ./kubernets/main.md

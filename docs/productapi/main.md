@@ -175,6 +175,7 @@ api/
                             ProductRepository.java
                             ProductResource.java
                             ProductService.java
+                            RedisCacheConfig.java
                 resources/
                     application.yaml
                     db/
@@ -258,6 +259,12 @@ api/
 
         ``` { .java .copy .select linenums='1' }
         --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/product-service/refs/heads/main/src/main/java/store/product/ProductService.java"
+        ```
+
+    === "RedisCacheConfig.java"
+
+        ``` { .java .copy .select linenums='1' }
+        --8<-- "https://raw.githubusercontent.com/Joao-Pedro-Queiroz/product-service/refs/heads/main/src/main/java/store/product/RedisCacheConfig.java"
         ```
 
     === "V2025.08.29.001__create_schema.sql"

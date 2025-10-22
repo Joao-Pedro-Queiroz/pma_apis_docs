@@ -150,3 +150,4 @@ nav:
     - 6. Exchange API: ./exchangeapi/main.md
     - 7. Jenkins: ./jenkins/main.md
     - 8. Kubernets: ./kubernets/main.md
+    - 9. Bottlenecks: ./bottlenecks/main.py

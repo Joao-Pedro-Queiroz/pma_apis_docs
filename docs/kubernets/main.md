@@ -44,12 +44,15 @@ flowchart TB
         GW --> PROD
         GW --> EXC
         ACC --> DB
+        AUTH --> DB
         ORD --> DB
         PROD --> DB
     end
 
     EXT[Internet Client]
+    3PP[3partyapi]
     EXT --> GW
+    EXC --> 3PP
 ```
 
 ---

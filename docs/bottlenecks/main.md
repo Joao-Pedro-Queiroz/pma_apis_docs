@@ -13,13 +13,13 @@ Ele é configurado com um **Service Kubernetes do tipo `LoadBalancer`**, que ins
 
 ```mermaid
 flowchart LR
-    user((Usuário)) -->|HTTP/HTTPS| aws[ELB (AWS Load Balancer)]
-    aws --> gw[Gateway Service]
-    gw --> account
-    gw --> auth
-    gw --> order
-    gw --> product
-    gw --> exchange
+  user(("Usuario")) -->|HTTP/HTTPS| aws["ELB / AWS LoadBalancer"]
+  aws --> gw["Gateway Service"]
+  gw --> acc["Account"]
+  gw --> aut["Auth"]
+  gw --> ord["Order"]
+  gw --> prod["Product"]
+  gw --> exch["Exchange"]
 ```
 
 ### 🔹 Configuração do Gateway

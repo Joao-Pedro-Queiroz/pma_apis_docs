@@ -25,6 +25,15 @@ A infraestrutura do `store` é organizada em **múltiplos deployments e services
 
 ---
 
+## Status atual no EKS
+
+As capturas abaixo mostram o painel do EKS com os status de todos os deploys dos serviços atuais:
+
+![EKS Status 1](../img/eks_status_1.png)
+![EKS Status 2](../img/eks_status_2.png)
+
+---
+
 ## Diagrama Geral
 
 ```mermaid

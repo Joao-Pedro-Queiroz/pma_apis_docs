@@ -77,22 +77,6 @@ Todos os arquivos de configuração do Kubernetes estão organizados por serviç
 | Gateway-Service    | [Gateway API](../gatewayapi/main.md)               |
 | Product-Service    | [Product API](../productapi/main.md)               |
 | Order-Service      | [Order API](../orderapi/main.md)                   |
----
-
-## Aplicando os manifests
-
-```bash
-# Subir todos os componentes
-kubectl apply -f k8s/postgres/
-kubectl apply -f k8s/gateway-service/
-kubectl apply -f k8s/account-service/
-kubectl apply -f k8s/auth-service/
-kubectl apply -f k8s/product-service/
-kubectl apply -f k8s/order-service/
-
-# Verificar status dos pods e services
-kubectl get pods,svc -n store
-```
 
 ---
 

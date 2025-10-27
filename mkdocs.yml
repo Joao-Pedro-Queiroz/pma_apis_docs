@@ -1,8 +1,8 @@
-site_name: Documentação dos Exercícios de PMA
+site_name: Documentação dos Microserviços
 site_author: Sandmann, H.
-site_url: https://joao-pedro-queiroz.github.io/pma_documentacao_individual/
-repo_url: https://github.com/Joao-Pedro-Queiroz/pma_documentacao_individual
-repo_name: github/pma_documentacao_individual
+site_url: https://github.com/Joao-Pedro-Queiroz/pma_apis_docs
+repo_url: https://github.com/Joao-Pedro-Queiroz/pma_apis_docs
+repo_name: github/pma_apis_docs
 
 theme:
   name: material

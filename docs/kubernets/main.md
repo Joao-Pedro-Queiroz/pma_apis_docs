@@ -1,6 +1,6 @@
 # Kubernetes Deployment – Store Project
 
-O ambiente **Kubernetes (K8s)** do domínio `store` é responsável por **orquestrar, escalar e manter os microserviços** do projeto em execução contínua e resiliente.  
+O ambiente **Kubernetes (K8s)** é responsável por **orquestrar, escalar e manter os microserviços** do projeto em execução contínua e resiliente.  
 Os manifests seguem um padrão único de **modularização**, dividindo os componentes de **banco de dados**, **serviços de aplicação** e **gateway de entrada**.
 
 ---
@@ -77,6 +77,57 @@ Todos os arquivos de configuração do Kubernetes estão organizados por serviç
 | Gateway-Service    | [Gateway API](../gatewayapi/main.md)               |
 | Product-Service    | [Product API](../productapi/main.md)               |
 | Order-Service      | [Order API](../orderapi/main.md)                   |
+
+---
+
+## 🛠️ Deploy no Kubernetes – Comandos Utilizados
+
+O deploy no cluster Kubernetes é feito aplicando os manifests localizados na pasta `k8s` de cada serviço dentro do diretório `api/`.
+
+Os comandos seguem o padrão abaixo 👇
+
+---
+
+### 🗄️ 1️⃣ Banco de Dados – PostgreSQL
+
+Executar os manifests **na ordem correta**:
+
+```bash
+# Secrets (credenciais de acesso)
+kubectl apply -f ./k8s/secrets.yaml
+kubectl get secrets
+
+# ConfigMap (nome do banco)
+kubectl apply -f ./k8s/configmap.yaml
+kubectl get configmap
+
+# Deployment e Pod
+kubectl apply -f ./k8s/deployment.yaml
+kubectl get deployments
+kubectl get pods
+
+# Serviço interno (ClusterIP)
+kubectl apply -f ./k8s/service.yaml
+kubectl get services
+```
+
+### 🧩 2️⃣ Todos os demais serviços
+
+(account-service, auth-service, product-service,
+order-service, redis-service e gateway-service)
+
+```bash
+kubectl apply -f ./k8s/k8s.yaml
+kubectl get deployments
+kubectl get pods
+kubectl get services
+```
+
+### Verificar os status dos serviços
+
+```bash
+kubectl get all
+```
 
 ---
 

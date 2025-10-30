@@ -179,8 +179,8 @@ pipeline {
 ```mermaid
 flowchart TB
     subgraph Jenkins
-        I[Job Interface\nmvn clean install] -->|artefato| S[Job Serviço\nmvn package]
-        S --> D[Buildx: build & push Docker\n:latest e :BUILD_ID]
+        I[Job Interface<br/>mvn clean install] -->|artefato| S[Job Serviço<br/>mvn package]
+        S --> D[Buildx: build & push Docker<br/>:latest e :BUILD_ID]
     end
     D --> REG[(Docker Hub)]
 ```
@@ -190,9 +190,9 @@ flowchart TB
 ```mermaid
 flowchart TB
     subgraph Jenkins
-        I[Job Interface\nmvn clean install] --> S[Job Serviço\nmvn package]
-        S --> D[Build & Push Docker Image\n:latest e :BUILD_ID]
-        D --> K[Deploy to EKS\n(kubectl rollout)]
+        I[Job Interface<br/>mvn clean install] -->|artefato| S[Job Serviço<br/>mvn package]
+        S --> D[Build & Push Docker Image<br/>:latest e :BUILD_ID]
+        D --> K[Deploy to EKS<br/>(kubectl rollout)]
     end
     D --> REG[(Docker Hub)]
     K --> EKS[(AWS EKS Cluster)]

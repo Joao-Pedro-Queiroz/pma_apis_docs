@@ -1,6 +1,6 @@
-# Jenkins CI/CD – Store Project
+# Jenkins CI/CD
 
-A esteira de **CI/CD** do domínio `store` é orquestrada pelo **Jenkins**.  
+A esteira de **CI/CD** é orquestrada pelo **Jenkins**.  
 Existem **três tipos de pipelines**:
 
 1) **Interfaces** (`account`, `auth`, `product`, `order`, …)  

@@ -1,4 +1,4 @@
-# Kubernetes Deployment – Store Project
+# Kubernetes Deployment
 
 O ambiente **Kubernetes (K8s)** é responsável por **orquestrar, escalar e manter os microserviços** do projeto em execução contínua e resiliente.  
 Os manifests seguem um padrão único de **modularização**, dividindo os componentes de **banco de dados**, **serviços de aplicação** e **gateway de entrada**.

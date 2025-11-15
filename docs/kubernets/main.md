@@ -111,6 +111,13 @@ kubectl apply -f ./k8s/service.yaml
 kubectl get services
 ```
 
+### Criar novas secrets
+
+```bash
+kubectl create secret generic auth-secrets \
+  --from-literal=JWT_SECRET_KEY="sua_chave_super_secreta_aqui"
+```
+
 ### 🧩 2️⃣ Todos os demais serviços
 
 (account-service, auth-service, product-service,
